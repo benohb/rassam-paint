@@ -1,0 +1,67 @@
+object Form2: TForm2
+  Left = 446
+  Height = 269
+  Top = 401
+  Width = 337
+  Caption = 'Text'
+  ClientHeight = 269
+  ClientWidth = 337
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.3'
+  object Memo1: TMemo
+    Left = 0
+    Height = 149
+    Top = 80
+    Width = 337
+    Align = alClient
+    BorderSpacing.Top = 80
+    BorderSpacing.Bottom = 40
+    Lines.Strings = (
+      'Text'
+    )
+    OnChange = Memo1Change
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object ComboBox1: TComboBox
+    Left = 8
+    Height = 25
+    Top = 12
+    Width = 128
+    ItemHeight = 0
+    OnChange = ComboBox1Change
+    OnGetItems = ComboBox1GetItems
+    OnSelect = ComboBox1Select
+    TabOrder = 1
+    Text = 'ComboBox1'
+  end
+  object Button1: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 252
+    Height = 28
+    Top = 236
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 5
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 140
+    Height = 25
+    Top = 12
+    Width = 50
+    MinValue = 1
+    OnChange = SpinEdit1Change
+    TabOrder = 3
+    Value = 1
+  end
+end
